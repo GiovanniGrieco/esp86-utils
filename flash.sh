@@ -5,7 +5,7 @@ cd $DIR
 
 sudo killall picocom # just to be sure no-one is using UART
 
-. ./venv/bin/activate
+. ./.venv/bin/activate
 esptool.py --chip esp8266 \
            --port /dev/serial0 \
            --baud 115200 \
